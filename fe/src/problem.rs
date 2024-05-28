@@ -32,7 +32,7 @@ fn problem(lang: usize, cb: Callback<i32>) -> Html {
 
     html! {
         <div class="problem-box">
-            <h2>{selected_colors[correct_answer][lang]}</h2>
+            <h2>{selected_colors[correct_answer].join(", ")}</h2>
             <div class="options">
                 {
                     (0..N_OPT).map(|idx| {
