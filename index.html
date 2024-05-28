@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I cannot read</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/OmmyZhang/i-cannot-read@gh-pages/main-875ecc5d7a6c3fd8.css"/>
+</head>
+
+<body>
+<script type="module">
+import init, * as bindings from '//cdn.jsdelivr.net/gh/OmmyZhang/i-cannot-read@gh-pages/i-cannot-read-e0d51f9ac13c5c7f.js';
+const wasm = await init('//cdn.jsdelivr.net/gh/OmmyZhang/i-cannot-read@gh-pages/i-cannot-read-e0d51f9ac13c5c7f_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+
+</html>
