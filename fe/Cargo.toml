@@ -8,5 +8,6 @@ edition = "2021"
 [dependencies]
 yew = { version="0.21", features = ["csr"] }
 yew-autoprops = "0.4.1"
+yew-hooks = "0.3"
 rand = "0.8.5"
 web-sys = "0.3.67"
